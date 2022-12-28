@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <div class="display_area">
+        <div class="swipe_btn">
+            <span class="btn_text">开启Python之旅 >>></span>
+            <div class="swipe_progress"></div>
+            <input class="swipe_input" type="range" min=0 max=100 value=1>
+        </div>
+        <div class="output_text" id="output">
+            请稍后...
+        </div>
+        <div id="success_ui" style="display: none;">
+            <div class="success_text">
+                恭喜，安装完成！
+            </div>
+            <div class="after_install">
+                <button class="after_install_btn" id="open_project_btn" type="button">Hello World</button>
+                <button class="after_install_btn" id="quit_btn" type="button">退&emsp;&ensp;&ensp;出</button>
+            </div>
+        </div>
+    </div>
+    <div id="install_setting_tip">
+        已加载来自<span id="install_setting_author">作者</span>的自定义安装配置，请您确保该安装配置来源可信！
+    </div>
+    <div id="about">
+        <a class="buttom_info" href="https://www.github.com" target="_blank">PySuiter v0.0.1a</a>
+        <span class="vhr">|</span>
+        <a class="buttom_info" href="https://www.github.com" target="_blank">官方介绍</a>
+        <span class="vhr">|</span>
+        <a class="buttom_info" id="setting_btn" href="javascript:void (0);">高级选项</a>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

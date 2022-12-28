@@ -1,0 +1,24 @@
+{
+    "VERSION": 1,
+    "AUTHOR": "official",
+    "COMMNET": null,
+    "PYTHON": {
+        "PythonAvailableVersion": [
+            "3.7.9",
+            "3.8.10",
+            "3.9.13",
+            "3.10.8",
+            "3.11.0"
+        ],
+        "PythonSelectVersion": 4,
+        "ExtraModule": [
+            "jsonrpc",
+            "utils",
+            "autopep8"
+        ]
+    },
+    "VSCODE": {
+        "Installation": true,
+        "Shortcut": true
+    }
+}

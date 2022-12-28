@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高级选项</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/setting.css">
+</head>
+
+<body>
+    <div class="div_setting">
+        <div class="setting_category" id="install_setting">
+            <p class="category_name">安装设置</p>
+            <div class="setting_items">
+                <div class="setting_item">
+                    <span class="setting_name">安装路径</span>
+                    <input id="install_pth_text" type="text" value="null">
+                </div>
+            </div>
+        </div>
+        <div class="setting_category" id="py_setting">
+            <p class="category_name">PYTHON设置</p>
+            <div class="setting_items">
+                <div class="setting_item">
+                    <span class="setting_name">安装版本</span>
+                    <select id="inst_ver_select">
+                    </select>
+                </div>
+                <hr class="item_hr">
+                <div class="setting_item">
+                    <span class="setting_name">额外安装模块</span>
+                    <input id="extra_mod_text" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="setting_category" id="vscode_setting">
+            <p class="category_name">VSCODE设置</p>
+            <div class="setting_items">
+                <div class="setting_item">
+                    <span class="setting_name">安装vscode编辑器</span>
+                    <input id="vscode_inst_chkbox" type="checkbox">
+                </div>
+                <hr class="item_hr">
+                <div class="setting_item">
+                    <span class="setting_name">创建桌面快捷方式</span>
+                    <input id="vscode_shortcut_chkbox" type="checkbox">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="setting_btns">
+        <button class="setting_button" id="save_btn">保存</button>
+        <button class="setting_button" id="export_btn">导出</button>
+        <button class="setting_button" id="cancel_btn">取消</button>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/setting.js"></script>
+</body>
+
+</html>
